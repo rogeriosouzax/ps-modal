@@ -1,0 +1,11 @@
+<h5>modal-father</h5>
+<div>
+  <div class="border">
+    <button class="btn btn-md btn-outline-primary" (click)="open(content)">
+      <i class="fa fa-user"></i>Abrir modal</button>
+  </div>
+</div>
+
+<ng-template #content let-modal>
+  <app-modal-son [modal]="modalRef"></app-modal-son>
+</ng-template>
